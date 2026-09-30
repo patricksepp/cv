@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patrick Sepp CV</title>
+<meta name="robots" content="noindex">
+</head>
+<body style="margin:0">
+
+<style>
+  /* Layout: the printed CV's two columns (grey profile rail + white experience column), stacking to one column on phones */
+  :root {
+    --bg: #ecebeb;
+    --paper: #fafafa;
+    --rail: #8b8989;
+    --rail-fg: #ffffff;
+    --rail-head: #ffc0b8;
+    --ink: #5f5d5d;
+    --muted: #858282;
+    --accent: #f04f4f;
+    --line: #e2dfdf;
+    --font-display: "Hind", Tahoma, "Segoe UI", Verdana, sans-serif;
+    --font-body: "Hind", Tahoma, "Segoe UI", Verdana, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151414; --paper: #1f1d1d; --rail: #3a3737; --rail-fg: #f1eeee; --rail-head: #ff9d92;
+      --ink: #dcd8d8; --muted: #a7a2a2; --accent: #ff6b63; --line: #333030; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151414; --paper: #1f1d1d; --rail: #3a3737; --rail-fg: #f1eeee; --rail-head: #ff9d92;
+    --ink: #dcd8d8; --muted: #a7a2a2; --accent: #ff6b63; --line: #333030; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5; padding-inline: 16px; padding-block: 32px; }
+  .sheet { max-width: 920px; margin: 0 auto; display: grid; grid-template-columns: 290px 1fr; background: var(--paper); box-shadow: 0 10px 40px rgba(0,0,0,.08); }
+  .rail { background: var(--rail); color: var(--rail-fg); text-align: center; padding: 44px 28px; display: flex; flex-direction: column; gap: 40px; }
+  .photo { width: 190px; height: 190px; border-radius: 50%; object-fit: cover; margin: 0 auto; display: block; }
+  .rail h2 { color: var(--rail-head); font-family: var(--font-display); font-size: 1.3rem; letter-spacing: .06em; margin: 0 0 8px; }
+  .rail p { margin: 0; }
+  .contact { font-variant-numeric: tabular-nums; }
+  .contact span { display: block; user-select: all; }
+  .main { padding: 48px 44px; min-width: 0; }
+  h1 { font-family: var(--font-display); color: var(--accent); font-size: clamp(2.4rem, 7vw, 3.4rem); line-height: 1; text-align: center; margin: 8px 0 20px; font-weight: 700; }
+  .role { background: var(--rail); color: var(--rail-fg); text-align: center; letter-spacing: .25em; text-transform: uppercase; font-size: .9rem; padding: 10px; }
+  .main h2 { font-family: var(--font-display); color: var(--accent); font-size: 1.45rem; letter-spacing: .03em; margin: 36px 0 14px; text-wrap: balance; }
+  .jobs { display: flex; flex-direction: column; gap: 24px; }
+  .job h3, .edu h3, .cert { margin: 0; font-size: 1.12rem; color: var(--muted); font-weight: 700; }
+  .where { font-style: italic; color: var(--muted); font-size: .92rem; margin-bottom: 4px; }
+  ul { margin: 0; padding-left: 0; list-style: none; }
+  li { position: relative; padding-left: 22px; }
+  li::before { content: "–"; position: absolute; left: 0; color: var(--muted); }
+  .edu { display: flex; flex-direction: column; gap: 12px; }
+  .indent { font-style: italic; color: var(--muted); padding-left: 22px; }
+  .certs { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+  .sep { color: var(--line); margin: 0 .35em; }
+  .pdf { text-align: center; margin: 14px 0 0; }
+  .pdf a { color: var(--accent); font-weight: 600; }
+  @media (max-width: 720px) {
+    body { padding-block: 16px; }
+    .sheet { grid-template-columns: 1fr; }
+    .rail { padding: 32px 20px; gap: 28px; }
+    .photo { width: 150px; height: 150px; }
+    .main { padding: 32px 20px; }
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap">
+
+<article class="sheet">
+  <aside class="rail">
+    <img class="photo" src="photo.jpeg" alt="Patrick Sepp">
+    <section>
+      <h2>ABOUT ME</h2>
+      <p>I am polite and easy to talk to, with a light sense of humour. When I see a problem, I don't criticise. I go and help fix it right away.</p>
+    </section>
+    <section>
+      <h2>SKILLS</h2>
+      <p>Windows, Unix/Linux, macOS, Microsoft Office, SQL, AutoCAD, software, networking, hardware.</p>
+    </section>
+    <section class="contact">
+      <h2>CONTACT</h2>
+      <p><span>Patrick Sepp (08.08.1997)</span><span>Phone: +372 58106121</span><span>sepp.patrick@gmail.com</span></p>
+    </section>
+    <section>
+      <h2>ADDITIONAL INFO</h2>
+      <p>Category B driving licence</p>
+    </section>
+  </aside>
+
+  <main class="main">
+    <h1>Patrick Sepp</h1>
+    <div class="role">IT Specialist</div>
+    <p class="pdf"><a href="Patrick-Sepp-CV.pdf">Download PDF</a></p>
+
+    <h2>WORK EXPERIENCE</h2>
+    <div class="jobs">
+      <div class="job">
+        <h3>IT Specialist</h3>
+        <div class="where">SECURITY MS <span class="sep">|</span> 4 years – present</div>
+        <ul>
+          <li>Server installation and administration</li>
+          <li>Hardware repair and recovery</li>
+          <li>Setting up and managing local area networks</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Low-Voltage Systems Specialist</h3>
+        <div class="where">SECURITY MS <span class="sep">|</span> 2 years</div>
+        <ul>
+          <li>Equipment maintenance and repair</li>
+          <li>Setting up and managing local area networks</li>
+          <li>Software configuration and programming</li>
+          <li>Installing and configuring IP and analogue cameras</li>
+          <li>Installing fire alarm, access control and security systems</li>
+          <li>Cabling and cable termination</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>IT Specialist</h3>
+        <div class="where">EKTACO <span class="sep">|</span> 2 years</div>
+        <ul>
+          <li>POS system maintenance and support: hardware and software</li>
+          <li>Technical customer support</li>
+          <li>Online store development and administration</li>
+          <li>Database configuration, optimisation and administration</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>EDUCATION AND TRAINING</h2>
+    <div class="edu">
+      <div>
+        <h3>Higher education: in progress</h3>
+        <div class="indent">IT Systems Administration</div>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <div class="indent">Estonian (native)<br>Russian (very good, spoken)<br>English (good, spoken and written)</div>
+      </div>
+    </div>
+    <div class="certs">
+      <div class="cert">Junior IT Specialist, Level 4 <span class="sep">|</span> BCS</div>
+      <div class="cert">Active Directory and Group Policy <span class="sep">|</span> Udemy</div>
+    </div>
+  </main>
+</article>
+
+</body>
+</html>
